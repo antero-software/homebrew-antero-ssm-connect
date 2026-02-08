@@ -4,15 +4,15 @@ class AnteroSsmConnect < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/antero-software/antero-ssm-connect/releases/download/v1.0.5/antero-ssm-connect-darwin-amd64.tar.gz"
-      sha256 "ebc0314b442ef325b77a4230e1e536b3103613cf9484e98f3b9f137b24b6571d"
+      url "https://github.com/antero-software/antero-ssm-connect/releases/download/v1.0.6/antero-ssm-connect-darwin-amd64.tar.gz"
+      sha256 "e430dde382c912e4e89057e7e7d9a792c6be75c008385db41c71fd54ffe93a9c"
     elsif Hardware::CPU.arm?
-      url "https://github.com/antero-software/antero-ssm-connect/releases/download/v1.0.5/antero-ssm-connect-darwin-arm64.tar.gz"
-      sha256 "b39de7a7eee3a7e01c86f9720a229702b0a695bf73deff0968a1d9821cf47e21"
+      url "https://github.com/antero-software/antero-ssm-connect/releases/download/v1.0.6/antero-ssm-connect-darwin-arm64.tar.gz"
+      sha256 "aff3e15b75f0865422ebbbee5f3031ea90e35df785b3857909c3a0b3c83869d2"
     end
   end
 
-  version "v1.0.5"
+  version "v1.0.6"
 
   def install
     bin.install "antero-ssm-connect"
